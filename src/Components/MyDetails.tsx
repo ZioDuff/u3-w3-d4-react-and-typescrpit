@@ -54,7 +54,7 @@ const MyDetails = () => {
                 <h2 className=" mb-auto">{singleArt?.title}</h2>
 
                 <p>{singleArt?.news_site}</p>
-                <p>{singleArt?.published_at}</p>
+                <p>{new Date(singleArt?.published_at).toLocaleDateString()}</p>
               </div>
             </div>
             <div>
